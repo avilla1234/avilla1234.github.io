@@ -10,6 +10,7 @@
             margin: 20px;
             background-color: #ecf0f5; /* Light Blue-Gray Background */
             color: #333;
+            text-align: center; /* Center align content */
         }
 
         h1, h2 {
@@ -26,7 +27,8 @@
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 20px;
-            text-align: center; /* Center the navigation links on mobile */
+            display: flex;
+            justify-content: center; /* Center align menu items */
         }
 
         nav a {
@@ -35,6 +37,11 @@
             margin-right: 20px;
             font-weight: bold;
             display: inline-block; /* Ensure proper spacing between navigation links */
+            transition: color 0.3s; /* Smooth transition for color change */
+        }
+
+        nav a:hover {
+            color: #2c3e50; /* Darker color on hover */
         }
 
         img {
@@ -47,9 +54,12 @@
 
         /* Media Query for Mobile View */
         @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column; /* Stack menu items in a column on mobile */
+            }
             nav a {
-                display: block;
-                margin: 10px 0;
+                margin-right: 0;
+                margin-bottom: 10px;
             }
         }
     </style>
