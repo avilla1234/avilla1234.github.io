@@ -8,40 +8,54 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 20px;
-            background-color: #f2f5fa; /* Light Blue-Gray Background */
+            background-color: #f2f5fa; 
             color: #333;
-            text-align: center; /* Center align content */
+            text-align: center; 
         }
 
         h1, h2 {
-            color: #3498db; /* Blue */
+            color: #3498db; 
         }
 
         p {
-            color: #555; /* Dark Gray */
+            color: #555; 
             line-height: 1.6;
         }
 
         nav {
-            background-color: #3498db; /* Blue Navbar */
+            background-color: #3498db; 
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 20px;
             display: flex;
-            justify-content: center; /* Center align menu items */
+            justify-content: center; 
         }
 
         nav a {
             text-decoration: none;
-            color: #fff; /* White */
+            color: #fff; 
             margin-right: 20px;
             font-weight: bold;
-            display: inline-block; /* Ensure proper spacing between navigation links */
-            transition: color 0.3s; /* Smooth transition for color change */
+            display: inline-block; 
         }
 
-        nav a:hover {
-            color: #2c3e50; /* Darker color on hover */
+        .section {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-box {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
 
         img {
@@ -50,22 +64,26 @@
             border-radius: 8px;
             margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s; /* Smooth transition for box-shadow change */
         }
 
-        img:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Darker box-shadow on hover */
-        }
 
-        /* Media Query for Mobile View */
         @media only screen and (max-width: 600px) {
             nav {
-                flex-direction: column; /* Stack menu items in a column on mobile */
+                flex-direction: column; 
+                align-items: center; 
             }
             nav a {
                 margin-right: 0;
                 margin-bottom: 10px;
             }
+
+            .section, .question-box {
+                max-width: 100%;
+            }
+        }
+
+        .section:hover, .question-box:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -74,18 +92,30 @@
         <a href="index.html" title="Home">Home</a>
         <a href="applications.html" title="Applications">Applications</a>
         <a href="discussion.html" title="Discussion">Discussion</a>
+        <a href="about.html" title="About Us">About Us</a>
+
     </nav>
 
-    <h1>Introduction of Technology</h1>
+    <div class="section">
+        <h1>Introduction of Technology</h1>
 
-    <p><strong>What technology did the team choose?</strong></p>
-    <p>Our team chose to research generative AI.</p>
+        <div class="question-box">
+            <p><strong>What technology did the team choose?</strong></p>
+            <p>Our team chose to research generative AI.</p>
+        </div>
 
-    <p><strong>Provide a good introduction to what the chosen technology is.</strong></p>
-    <p>Generative AI is an AI language model that uses learning to generate data in a way that mimics human interaction. It is commonly used for generating text, videos, images, and even audio.</p>
+        <div class="question-box">
+            <p><strong>Provide a good introduction to what the chosen technology is.</strong></p>
+            <p>Generative AI is an AI language model that uses learning to generate data in a way that mimics human interaction. It is commonly used for generating text, videos, images, and even audio. In addition to generating text, videos, images, and audio, its capabilities extend into more nuanced applications. This technology, rooted in advanced machine learning algorithms, particularly deep learning, enables it to assimilate and replicate complex patterns and styles found in vast datasets.
+            </p>
+        </div>
 
-    <p><strong>Why did the team choose it? (in other words, why does the tech matter?).</strong></p>
-    <p>We chose this topic because we all had a vested interest in the concept of the ethics involved in generative AI...</p>
+        <div class="question-box">
+            <p><strong>Why did the team choose Generative AI?.</strong></p>
+            <p>We chose this topic because we all had a vested interest in the concept of the ethics involved in generative AI. It is well known now that technologies such as ChatGPT and Google Bard are very useful tools, but can there be some areas that cause a second look when it comes to using them ethically? Or, can they be developed to stay in line with societal ethics?
+            </p>
+        </div>
+    </div>
 
     <img src="https://s41256.pcdn.co/wp-content/uploads/2023/02/230222_Generative-AI_Blog_2.jpg" alt="AI Image 1">
 </body>
