@@ -10,6 +10,7 @@
             margin: 20px;
             background-color: #ecf0f5; /* Light Blue-Gray Background */
             color: #333;
+            text-align: center; /* Center align content */
         }
 
         h1, h2 {
@@ -26,6 +27,8 @@
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center; /* Center align menu items */
         }
 
         nav a {
@@ -33,6 +36,24 @@
             color: #fff; /* White */
             margin-right: 20px;
             font-weight: bold;
+            transition: color 0.3s; /* Smooth transition for color change */
+        }
+
+        nav a:hover {
+            color: #2c3e50; /* Darker color on hover */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s; /* Smooth transition for box-shadow change */
+        }
+
+        img:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Darker box-shadow on hover */
         }
     </style>
 </head>
